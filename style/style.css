@@ -1,0 +1,111 @@
+
+header{
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    border: 1px solid darkgoldenrod;
+    padding: 0 5px;
+    background: url("../img/background_for_header.jpg") no-repeat;
+    background-size: cover;
+}
+#count p{
+    font-family: 'Coiny', cursive;
+    color: darkgoldenrod;
+    margin: 0;
+}
+h1{
+    font-family: 'Coiny', cursive;
+    color: darkgoldenrod;
+}
+#btns{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#newGame{
+    font-family: 'Coiny', cursive;
+    font-size: 10px;
+    text-align: center;
+    color: darkgoldenrod;
+    width: 65px;
+    height: 30px;
+    border: 0.5px solid palegoldenrod;
+    outline: none;
+    background: url("../img/background_for_restart.jpg") no-repeat;
+    background-size: cover;
+}
+#draw{
+    font-family: 'Coiny', cursive;
+    font-size: 10px;
+    text-align: center;
+    color: darkgoldenrod;
+    width: 65px;
+    height: 30px;
+    border: 0.5px solid palegoldenrod;
+    outline: none;
+    background: url("../img/background_for_restart.jpg") no-repeat;
+    background-size: cover;
+}
+main{
+    width: 500px;
+    height: 300px;
+    border: 1px solid darkgoldenrod;
+    text-align: center;
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: url("../img/background_for_field.jpg") no-repeat  ;
+    background-size: cover;
+    border-top: none;
+}
+.winner{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    background: url("../img/background_for_winner.jpg");
+    font-family: 'Coiny', cursive;
+    color: darkgoldenrod;
+    font-size: 25px;
+    font-weight: bold;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.field{
+    width: 90px;
+    height: 90px;
+    background: url("../img/background_for_button.jpg") no-repeat;
+    background-size: cover;
+    border: 1px solid palegoldenrod;
+    outline: none;
+}
+
+
+
+
+#newGame:active{
+ border: 0.5px solid goldenrod;
+}
+#draw:active{
+    border: 0.5px solid goldenrod;
+}
+.field:active{
+    border: 1px solid goldenrod;
+}
+.field:disabled{
+    font-family: 'Coiny', cursive;
+    color: darkgoldenrod;
+    font-size: 25px;
+    font-weight: bold;
+}
